@@ -6,15 +6,19 @@
 A generic PHP Validator Service Object
 
 Install with either:
+
 `
 composer require data-library/validator
 `
+
 or in your composer.json file add under require:
+
 `
     "data-library/validator": "dev-master"
 `
 
 To use, create a new instance of the Validator Object
+
 ` 
     $validator = new DataLibrary\Validator();
 `
@@ -29,6 +33,9 @@ The full signature for the public functions are:
 
 `
     public function validate($type, $data, $mayBeNull = false, $mayBeEmpty = false, $exceptions = true);
+`
+
+`
     public function isValid($type, $data, $mayBeNull = false, $mayBeEmpty = false, $exceptions = true);
 `
 
