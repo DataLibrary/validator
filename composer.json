@@ -4,7 +4,7 @@
   "license": "MIT",
   "keywords": ["DataLibrary", "objects", "validator service"],
   "type": "library",
-  "homepage": "https://github.com/DataLibrary/Validator",
+  "homepage": "https://github.com/DataLibrary/validator",
   "authors": [
         {
             "name": "James Johnson",
