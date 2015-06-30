@@ -1,0 +1,32 @@
+{
+  "name": "data-library/validator",
+  "description": "A PHP Generic Validator Service Object",
+  "license": "MIT",
+  "keywords": ["DataLibrary", "objects", "validator service"],
+  "type": "library",
+  "homepage": "https://github.com/DataLibrary/Validator",
+  "authors": [
+        {
+            "name": "James Johnson",
+            "email": "james.johnson@excellentingenuity.com",
+            "role": "Developer"
+        }
+    ],
+  "support": {
+      "docs": "https://github.com/DataLibrary/validator",
+      "issues": "https://github.com/DataLibrary/validator/issues",
+      "wiki": "https://github.com/DataLibrary/validator/wiki"
+  },
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "mockery/mockery": "0.9.*"
+   },
+   "autoload": {
+	 	"psr-4": {
+	    "DataLibrary\\Validator\\": "src"
+	  }
+	}
+}
