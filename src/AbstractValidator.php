@@ -64,10 +64,10 @@ abstract class AbstractValidator implements ValidatorInterface
             }
         } elseif ($this->isCorrectPrimitive($data, $type)) {
             return true;
-        } else {
-            $this->throwException($data, 'is not of type ' . $type, $exceptions);
-            return false;
         }
+
+        $this->throwException($data, 'is not of type ' . $type, $exceptions);
+        return false;
 
     }
 
@@ -81,10 +81,12 @@ abstract class AbstractValidator implements ValidatorInterface
 
     protected function isCorrectObject($data, $type)
     {
-        if ($data instanceof $type) {
-            return false;
+        if ($data instanceof $type && get_class($data) == $type) {
+            echo get_class($data);
+            echo $type;
+            return true;
         }
-        return true;
+        return false;
     }
 
     protected function throwException($data, $message, $exceptions)

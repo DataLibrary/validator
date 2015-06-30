@@ -82,4 +82,21 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
     {
         $this->assertFalse($this->validator->isValid($type = 'integer', $data = 'string me'));
     }
+
+    /**
+     * @test
+     */
+    public function testIsValidObject()
+    {
+        $this->assertTrue($this->validator->isValid($type = 'Mockery\Mock', $data = new Mockery\Mock()));
+    }
+
+    /**
+     * @test
+     * @expectedException DataLibrary\Validator\ValidationException
+     */
+    public function testIsValidWrongObjectTypeError()
+    {
+        $this->assertFalse($this->validator->isValid($type = 'Validator', $data = new Mockery\Mock()));
+    }
 }
