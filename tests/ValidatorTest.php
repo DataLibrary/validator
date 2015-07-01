@@ -9,6 +9,9 @@ use DataLibrary\Validator\ValidationException;
 /**
  * Class ValidatorTest
  * @package DataLibrary\Validator
+ * @author James Johnson james.johnson@excellentingenuity.com
+ * @license MIT
+ * @copyright 2015 by ExcellentInGenuity LLC
  */
 class ValidatorTest extends \PHPUnit_Framework_TestCase {
 

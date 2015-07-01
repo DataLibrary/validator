@@ -5,6 +5,9 @@ namespace DataLibrary\Validator;
 /**
  * Interface ValidatorInterface
  * @package DataLibrary\Validator
+ * @author James Johnson james.johnson@excellentingenuity.com
+ * @license MIT
+ * @copyright 2015 by ExcellentInGenuity LLC
  */
 interface ValidatorInterface
 {

@@ -7,6 +7,9 @@ use DataLibrary\Validator\ValidationException;
 /**
  * Class AbstractValidator
  * @package DataLibrary\Validator
+ * @author James Johnson james.johnson@excellentingenuity.com
+ * @license MIT
+ * @copyright 2015 by ExcellentInGenuity LLC
  */
 abstract class AbstractValidator implements ValidatorInterface
 {
