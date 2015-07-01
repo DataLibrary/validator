@@ -6,10 +6,20 @@ use Mockery;
 use DataLibrary\Validator\Validator;
 use DataLibrary\Validator\ValidationException;
 
+/**
+ * Class ValidatorTest
+ * @package DataLibrary\Validator
+ */
 class ValidatorTest extends \PHPUnit_Framework_TestCase {
 
+    /**
+     * @var
+     */
     protected  $validator;
 
+    /**
+     * setUp
+     */
     public function setUp()
     {
         $this->validator = new Validator();

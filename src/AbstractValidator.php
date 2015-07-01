@@ -4,19 +4,50 @@ namespace DataLibrary\Validator;
 
 use DataLibrary\Validator\ValidationException;
 
+/**
+ * Class AbstractValidator
+ * @package DataLibrary\Validator
+ */
 abstract class AbstractValidator implements ValidatorInterface
 {
 
+    /**
+     * validate
+     * @param      $type
+     * @param      $data
+     * @param bool $mayBeNull
+     * @param bool $mayBeEmpty
+     * @param bool $exceptions
+     * @return bool
+     */
     public function validate($type, $data, $mayBeNull = false, $mayBeEmpty = false, $exceptions = true)
     {
        return $this->validation($type, $data, $mayBeNull, $mayBeEmpty, $exceptions);
     }
 
+    /**
+     * isValid
+     * @param      $type
+     * @param      $data
+     * @param bool $mayBeNull
+     * @param bool $mayBeEmpty
+     * @param bool $exceptions
+     * @return bool
+     */
     public function isValid($type, $data, $mayBeNull = false, $mayBeEmpty = false, $exceptions = true)
     {
         return $this->validation($type, $data, $mayBeNull, $mayBeEmpty, $exceptions);
     }
 
+    /**
+     * validation
+     * @param $type
+     * @param $data
+     * @param $mayBeNull
+     * @param $mayBeEmpty
+     * @param $exceptions
+     * @return bool
+     */
     protected function validation($type, $data, $mayBeNull, $mayBeEmpty, $exceptions)
     {
         if ($mayBeNull == false) {
@@ -38,6 +69,13 @@ abstract class AbstractValidator implements ValidatorInterface
         return true;
     }
 
+    /**
+     * isNull
+     * @param $data
+     * @param $exceptions
+     * @return bool
+     * @throws \DataLibrary\Validator\ValidationException
+     */
     protected function isNull($data, $exceptions)
     {
         if (is_null($data)) {
@@ -47,6 +85,13 @@ abstract class AbstractValidator implements ValidatorInterface
         return false;
     }
 
+    /**
+     * isEmpty
+     * @param $data
+     * @param $exceptions
+     * @return bool
+     * @throws \DataLibrary\Validator\ValidationException
+     */
     protected function isEmpty($data, $exceptions)
     {
         if ($data == '') {
@@ -56,6 +101,14 @@ abstract class AbstractValidator implements ValidatorInterface
         return false;
     }
 
+    /**
+     * isOfCorrectType
+     * @param $data
+     * @param $type
+     * @param $exceptions
+     * @return bool
+     * @throws \DataLibrary\Validator\ValidationException
+     */
     protected function isOfCorrectType($data, $type, $exceptions)
     {
         if (gettype($data) == 'object') {
@@ -71,6 +124,12 @@ abstract class AbstractValidator implements ValidatorInterface
 
     }
 
+    /**
+     * isCorrectPrimitive
+     * @param $data
+     * @param $type
+     * @return bool
+     */
     protected function isCorrectPrimitive($data, $type)
     {
         if (gettype($data) == $type) {
@@ -79,6 +138,12 @@ abstract class AbstractValidator implements ValidatorInterface
         return false;
     }
 
+    /**
+     * isCorrectObject
+     * @param $data
+     * @param $type
+     * @return bool
+     */
     protected function isCorrectObject($data, $type)
     {
         if ($data instanceof $type && get_class($data) == $type) {
@@ -89,6 +154,13 @@ abstract class AbstractValidator implements ValidatorInterface
         return false;
     }
 
+    /**
+     * throwException
+     * @param $data
+     * @param $message
+     * @param $exceptions
+     * @throws \DataLibrary\Validator\ValidationException
+     */
     protected function throwException($data, $message, $exceptions)
     {
         if ($exceptions) {
