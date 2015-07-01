@@ -5,6 +5,8 @@
 
 A generic PHP Validator Service Object
 
+Sponsored by [ExcellentInGenuity LLC](www.excellentingenuity.com) 
+
 Install with either:
 
 `
@@ -40,3 +42,6 @@ The full signature for the public functions are:
 `
 
 An Interface is provided in `DataLibrary\Validator\ValidatorInterface`.
+
+
+Copyright 2015 by ExcellentInGenuity LLC contributed to DataLibrary
