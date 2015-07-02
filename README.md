@@ -19,7 +19,26 @@ or in your composer.json file add under require:
     "data-library/validator": "dev-master"
 `
 
-To use, create a new instance of the Validator Object
+To use the static Facade use the Validator Facade (place before your class declaration)
+
+`
+use DataLibrary\ValidatorFacade as Validator;
+`
+
+Then you can use the Validator statically like so:
+
+`
+    Validator::validate($type = 'string', $data = 'this is a string');
+`
+
+or with the `isValid` method.
+
+`
+    Validator::isValid($type = 'string', $data = 'this is a string');
+`
+
+
+To use a concrete instance of Validator create a new instance of the Validator Object
 
 ` 
     $validator = new DataLibrary\Validator();
