@@ -114,7 +114,7 @@ abstract class AbstractValidator implements ValidatorInterface
      */
     protected function isOfCorrectType($data, $type, $exceptions)
     {
-        if (gettype($data) == 'object') {
+        if (is_object($data)) {
             if ($this->isCorrectObject($data, $type)) {
                 return true;
             }
@@ -149,9 +149,9 @@ abstract class AbstractValidator implements ValidatorInterface
      */
     protected function isCorrectObject($data, $type)
     {
-        if ($data instanceof $type && get_class($data) == $type) {
-            echo get_class($data);
-            echo $type;
+        if ($data instanceof $type) {
+            echo get_class($data) . "\n";
+            echo $type . "\n";
             return true;
         }
         return false;
