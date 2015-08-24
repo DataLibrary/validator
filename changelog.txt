@@ -1,3 +1,4 @@
+-3.0.0-dev - Moving to a JSON rules interface.
 -2.0.0 - Added a static Facade to make using the Validator easier.
 -1.0.1 - Updated docblocks
 -1.0.0 - Initial public release.
