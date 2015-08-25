@@ -6,7 +6,11 @@
  use DataLibrary\Validator\ValidationException;
  use DataLibrary\Validator\ValidatorFacade as Validator;
 
-class ValidatorFacadeTest extends \PHPUnit_Framework_TestCase {
+ /**
+  * Class ValidatorFacadeTest
+  * @package DataLibrary\Validator
+  */
+ class ValidatorFacadeTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * Cleanup needed for Mockery
