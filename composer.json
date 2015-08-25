@@ -29,5 +29,12 @@
 	 	"psr-4": {
 	    "DataLibrary\\Validator\\": "src"
 	  }
-	}
+	},
+  "extra": {
+    "branch-alias": {
+      "master": "master-dev",
+      "2.x": "2.x-dev",
+      "3.x": "3.x-dev"
+    }
+  }
 }
