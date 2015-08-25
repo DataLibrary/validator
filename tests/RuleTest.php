@@ -1,0 +1,31 @@
+<?php
+
+namespace DataLibrary\Validator;
+
+use DataLibrary\Validator\Rule;
+use Mockery;
+
+class RuleTest extends \PHPUnit_Framework_TestCase
+{
+    /**
+     * @var
+     */
+    protected  $rule;
+
+    /**
+     * setUp
+     */
+    public function setUp()
+    {
+        $this->rule = new Rule();
+    }
+
+    /**
+     * Cleanup needed for Mockery
+     */
+    public function tearDown()
+    {
+        Mockery::close();
+        parent::tearDown();
+    }
+}
