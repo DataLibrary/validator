@@ -5,6 +5,10 @@ namespace DataLibrary\Validator;
 use DataLibrary\Validator\Rule;
 use Mockery;
 
+/**
+ * Class RuleTest
+ * @package DataLibrary\Validator
+ */
 class RuleTest extends \PHPUnit_Framework_TestCase
 {
     /**
@@ -28,4 +32,10 @@ class RuleTest extends \PHPUnit_Framework_TestCase
         Mockery::close();
         parent::tearDown();
     }
+
+    public function testConstructor()
+    {
+        $this->assertInstanceOf('DataLibrary\Validator\Rule', $this->rule);
+    }
+
 }
