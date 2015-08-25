@@ -33,6 +33,11 @@ class RuleTest extends \PHPUnit_Framework_TestCase
         parent::tearDown();
     }
 
+    /**
+     * testConstructor
+     *
+     * @test
+     */
     public function testConstructor()
     {
         $this->assertInstanceOf('DataLibrary\Validator\Rule', $this->rule);
