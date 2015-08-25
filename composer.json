@@ -1,5 +1,6 @@
 {
   "name": "data-library/validator",
+  "version": "2.1.1",
   "description": "A PHP Generic Validator Service Object",
   "license": "MIT",
   "keywords": ["DataLibrary", "objects", "validator service"],
@@ -30,4 +31,10 @@
 	    "DataLibrary\\Validator\\": "src"
 	  }
 	}
+  "extra": {
+    "branch-alias": {
+      "dev-master": "master",
+      "2.x": "2.x",
+      "3.x": "3.x"
+    }
 }
