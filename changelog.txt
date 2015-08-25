@@ -1,4 +1,4 @@
--2.x-dev - 2.x Branch for Backward Compatability.
+-2.x-dev - 2.x Branch for Backward Compatibility.
 -2.1.3 - 2.x Branch Ready.
 -2.1.2 - Fixes to composer.json.
 -2.1.1 - Changes to move to a 2.x branch.
