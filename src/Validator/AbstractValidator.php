@@ -2,7 +2,8 @@
 
 namespace DataLibrary\Validator;
 
-use DataLibrary\Validator\ValidationException;
+use DataLibrary\Validator\Exceptions\ValidationException;
+use DataLibrary\Validator\Interfaces\ValidatorInterface;
 
 /**
  * Class AbstractValidator
@@ -77,7 +78,7 @@ abstract class AbstractValidator implements ValidatorInterface
      * @param $data
      * @param $exceptions
      * @return bool
-     * @throws \DataLibrary\Validator\ValidationException
+     * @throws \DataLibrary\Validator\Exceptions\ValidationException
      */
     protected function isNull($data, $exceptions)
     {
@@ -93,7 +94,7 @@ abstract class AbstractValidator implements ValidatorInterface
      * @param $data
      * @param $exceptions
      * @return bool
-     * @throws \DataLibrary\Validator\ValidationException
+     * @throws \DataLibrary\Validator\Exceptions\ValidationException
      */
     protected function isEmpty($data, $exceptions)
     {
@@ -162,7 +163,7 @@ abstract class AbstractValidator implements ValidatorInterface
      * @param $data
      * @param $message
      * @param $exceptions
-     * @throws \DataLibrary\Validator\ValidationException
+     * @throws \DataLibrary\Validator\Exceptions\ValidationException
      */
     protected function throwException($data, $message, $exceptions)
     {

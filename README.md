@@ -16,7 +16,7 @@ composer require data-library/validator
 or in your composer.json file add under require:
 
 `
-    "data-library/validator": ">=2.1.*"
+    "data-library/validator": ">=3.*"
 `
 
 To use the static Facade use the Validator Facade (place before your class declaration)

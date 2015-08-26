@@ -3,8 +3,8 @@
  namespace DataLibrary\Validator;
 
  use Mockery;
- use DataLibrary\Validator\ValidationException;
- use DataLibrary\Validator\ValidatorFacade as Validator;
+ use DataLibrary\Validator\Exceptions\ValidationException;
+ use DataLibrary\Validator\Facades\ValidatorFacade as Validator;
 
  /**
   * Class ValidatorFacadeTest
@@ -55,7 +55,7 @@
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidMayBeEmptyError()
     {
@@ -64,7 +64,7 @@
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidMayBeNullError()
     {
@@ -73,7 +73,7 @@
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidWrongTypeError()
     {
@@ -90,7 +90,7 @@
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidWrongObjectTypeError()
     {

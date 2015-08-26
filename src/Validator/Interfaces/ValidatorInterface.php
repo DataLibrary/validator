@@ -1,6 +1,6 @@
 <?php
 
-namespace DataLibrary\Validator;
+namespace DataLibrary\Validator\Interfaces;
 
 /**
  * Interface ValidatorInterface

@@ -2,7 +2,7 @@
 
 namespace DataLibrary\Validator;
 
-use DataLibrary\Validator\Rule;
+use DataLibrary\Validator\Rule\Rule;
 use Mockery;
 
 /**
@@ -40,7 +40,7 @@ class RuleTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructor()
     {
-        $this->assertInstanceOf('DataLibrary\Validator\Rule', $this->rule);
+        $this->assertInstanceOf('DataLibrary\Validator\Rule\Rule', $this->rule);
     }
 
 }

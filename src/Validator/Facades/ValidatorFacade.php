@@ -1,12 +1,13 @@
 <?php 
 
- namespace DataLibrary\Validator;
+ namespace DataLibrary\Validator\Facades;
 
  use DataLibrary\Validator\Validator;
 
+
  /**
   * Class ValidatorFacade
-  * @package DataLibrary\Validator
+  * @package DataLibrary\Validator\Facades
   */
  class ValidatorFacade {
 
