@@ -71,7 +71,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidMayBeEmptyError()
     {
@@ -80,7 +80,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidMayBeNullError()
     {
@@ -89,7 +89,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidWrongTypeError()
     {
@@ -114,7 +114,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @expectedException DataLibrary\Validator\ValidationException
+     * @expectedException DataLibrary\Validator\Exceptions\ValidationException
      */
     public function testIsValidWrongObjectTypeError()
     {

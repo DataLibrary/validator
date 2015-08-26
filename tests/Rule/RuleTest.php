@@ -40,7 +40,7 @@ class RuleTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructor()
     {
-        $this->assertInstanceOf('DataLibrary\Validator\Rule\Rule', $this->rule);
+        $this->assertInstanceOf('DataLibrary\Validator\Rules\Rule', $this->rule);
     }
 
 }
