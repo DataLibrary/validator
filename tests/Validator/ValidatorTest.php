@@ -109,7 +109,7 @@ class ValidatorTest extends \PHPUnit_Framework_TestCase {
      */
     public function testIsValidObjectRealObject()
     {
-        $this->assertTrue($this->validator->isValid($type = 'DataLibrary\Validator\Validator', $data = Mockery::mock('DataLibrary\Validator\Validator', 'DataLibrary\Validator\Interface\ValidatorInterface')));
+        $this->assertTrue($this->validator->isValid($type = 'DataLibrary\Validator\Validator', $data = Mockery::mock('DataLibrary\Validator\Validator', 'DataLibrary\Validator\Interfaces\ValidatorInterface')));
     }
 
     /**
