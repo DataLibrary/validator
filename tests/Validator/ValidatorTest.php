@@ -4,7 +4,7 @@ namespace DataLibrary\Validator;
 
 use Mockery;
 use DataLibrary\Validator\Validator;
-use DataLibrary\Validator\ValidationException;
+use DataLibrary\Validator\Exceptions\ValidationException;
 
 /**
  * Class ValidatorTest
