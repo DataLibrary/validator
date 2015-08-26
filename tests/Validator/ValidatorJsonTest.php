@@ -3,8 +3,8 @@
 namespace DataLibrary\Validator;
 
 use Mockery;
-use DataLibrary\Validator\ValidationException;
-use DataLibrary\Validator\ValidatorFacade as Validator;
+use DataLibrary\Validator\Exceptions\ValidationException;
+use DataLibrary\Validator\Facades\ValidatorFacade as Validator;
 
 /**
  * Class ValidatorJsonTest
