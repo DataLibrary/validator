@@ -2,7 +2,7 @@
 
 namespace DataLibrary\Validator;
 
-use DataLibrary\Validator\Rule\Rule;
+use DataLibrary\Validator\Rules\Rule;
 use Mockery;
 
 /**
