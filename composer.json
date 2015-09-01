@@ -18,7 +18,8 @@
       "wiki": "https://github.com/DataLibrary/validator/wiki"
   },
   "require": {
-    "php": ">=5.5"
+    "php": ">=5.5",
+    "eig/configurator": "^1.0"
   },
   "require-dev": {
         "phpunit/phpunit": "~4.5",

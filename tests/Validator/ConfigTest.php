@@ -2,7 +2,9 @@
 
 namespace DataLibrary\Validator;
 
-use DataLibrary\Validator\Config;
+use Mockery;
+use DataLibrary\Validator\Config\Config;
+use DataLibrary\Validator\Config\Validators as Validators;
 
 /**
  * Class ConfigTest
@@ -21,9 +23,9 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function setup()
     {
-      $this->config = New Config();
+      $this->config = New Config(Validators);
     }
-    
+
     /**
      * Cleanup needed for Mockery
      */
@@ -31,5 +33,16 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
     {
         Mockery::close();
         parent::tearDown();
+    }
+
+
+    /**
+     * testHasKey
+     *
+     * @test
+     */
+    public function testHasKey()
+    {
+        $this->assertTrue($this->config->has('Object'));
     }
 }

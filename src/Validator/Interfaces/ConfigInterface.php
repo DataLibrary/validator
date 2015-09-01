@@ -6,6 +6,8 @@ namespace DataLibrary\Validator\Interfaces;
 /**
  * Interface ConfigInterface
  * @package DataLibrary\Validator\Interfaces
+ * Used from Laravel - framework/src/Illuminate/Config/Repository.php
+ * All rights reserved to Taylor Otwell
  */
 Interface ConfigInterface
 {
